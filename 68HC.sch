@@ -60,8 +60,8 @@ Text GLabel 1600 5950 0    60   Input ~ 0
 IRQ1
 Text GLabel 1900 6050 0    60   Input ~ 0
 FAN
-Text GLabel 2600 4550 2    60   Input ~ 0
-JS0
+Text GLabel 1600 1250 2    60   Input ~ 0
+D0
 Text GLabel 2850 4650 2    60   Input ~ 0
 JS1
 Text GLabel 2600 4750 2    60   Input ~ 0
@@ -147,45 +147,45 @@ F 3 "" H 9300 1950 60  0000 C CNN
 	1    9300 2750
 	1    0    0    -1  
 $EndComp
-Text GLabel 8000 3550 0    60   Input ~ 0
-A0
 Text GLabel 8200 3450 0    60   Input ~ 0
+A0
+Text GLabel 8000 3550 0    60   Input ~ 0
 A1
 Text GLabel 8200 3250 0    60   Input ~ 0
 A2
 Text GLabel 8200 3650 0    60   Input ~ 0
 A3
-Text GLabel 10500 3150 2    60   Input ~ 0
-A4
-Text GLabel 7300 3150 2    60   Input ~ 0
-A5
-Text GLabel 8000 3750 0    60   Input ~ 0
-A6
-Text GLabel 10400 3250 2    60   Input ~ 0
-A7
-Text GLabel 8100 800  0    60   Input ~ 0
-RX
-Text GLabel 7750 950  0    60   Input ~ 0
-TX
 Text GLabel 8200 4050 0    60   Input ~ 0
-INJ1
+A4
+Text GLabel 10500 3150 2    60   Input ~ 0
+A5
+Text GLabel 10400 3250 2    60   Input ~ 0
+A6
+Text GLabel 10150 6000 2    60   Input ~ 0
+A7
+Text GLabel 7700 1100 0    60   Input ~ 0
+RX
+Text GLabel 7700 1200 0    60   Input ~ 0
+TX
 Text GLabel 10700 4050 2    60   Input ~ 0
+INJ1
+Text GLabel 10400 3950 2    60   Input ~ 0
 INJ2
 Text GLabel 8000 2650 0    60   Input ~ 0
 IRQ1
 Text GLabel 8200 2550 0    60   Input ~ 0
 IRQ0
-Text GLabel 10950 3850 2    60   Input ~ 0
-IGN1
-Text GLabel 10400 3950 2    60   Input ~ 0
-IGN2
 Text GLabel 8000 2050 0    60   Input ~ 0
-ECL
+IGN1
 Text GLabel 8200 2150 0    60   Input ~ 0
+IGN2
+Text GLabel 10950 3850 2    60   Input ~ 0
+ECL
+Text GLabel 8200 1750 0    60   Input ~ 0
 FP
 Text GLabel 8200 2750 0    60   Input ~ 0
 FAN
-Text GLabel 7450 2500 0    60   Input ~ 0
+Text GLabel 7700 1400 0    60   Input ~ 0
 JS12
 $Comp
 L power:Earth #PWR05
@@ -220,7 +220,7 @@ F 3 "" H 10850 3750 50  0001 C CNN
 	1    10850 3750
 	1    0    0    -1  
 $EndComp
-Text GLabel 8200 1750 0    60   Input ~ 0
+Text GLabel 8000 1650 0    60   Input ~ 0
 Idle
 Text GLabel 8200 2350 0    60   Input ~ 0
 INJ3
@@ -427,30 +427,8 @@ $EndComp
 $Comp
 L Device:R R13
 U 1 1 5BBD2281
-P 8050 5150
-F 0 "R13" V 8130 5150 50  0000 C CNN
-F 1 "180k" V 8050 5150 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 7980 5150 50  0001 C CNN
-F 3 "" H 8050 5150 50  0001 C CNN
-	1    8050 5150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R14
-U 1 1 5BBD22ED
-P 8050 5550
-F 0 "R14" V 8130 5550 50  0000 C CNN
-F 1 "330k" V 8050 5550 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 7980 5550 50  0001 C CNN
-F 3 "" H 8050 5550 50  0001 C CNN
-	1    8050 5550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R15
-U 1 1 5BBD23A1
 P 8800 5150
-F 0 "R15" V 8880 5150 50  0000 C CNN
+F 0 "R13" V 8880 5150 50  0000 C CNN
 F 1 "180k" V 8800 5150 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805_HandSoldering" V 8730 5150 50  0001 C CNN
 F 3 "" H 8800 5150 50  0001 C CNN
@@ -458,14 +436,36 @@ F 3 "" H 8800 5150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R16
-U 1 1 5BBD240B
+L Device:R R14
+U 1 1 5BBD22ED
 P 8800 5550
-F 0 "R16" V 8880 5550 50  0000 C CNN
+F 0 "R14" V 8880 5550 50  0000 C CNN
 F 1 "330k" V 8800 5550 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805_HandSoldering" V 8730 5550 50  0001 C CNN
 F 3 "" H 8800 5550 50  0001 C CNN
 	1    8800 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R15
+U 1 1 5BBD23A1
+P 8050 5150
+F 0 "R15" V 8130 5150 50  0000 C CNN
+F 1 "180k" V 8050 5150 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 7980 5150 50  0001 C CNN
+F 3 "" H 8050 5150 50  0001 C CNN
+	1    8050 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R16
+U 1 1 5BBD240B
+P 8050 5550
+F 0 "R16" V 8130 5550 50  0000 C CNN
+F 1 "330k" V 8050 5550 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 7980 5550 50  0001 C CNN
+F 3 "" H 8050 5550 50  0001 C CNN
+	1    8050 5550
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -531,29 +531,29 @@ Text GLabel 6450 4950 0    60   Input ~ 0
 AD2
 Text GLabel 7250 4950 0    60   Input ~ 0
 AD3
-Text GLabel 8000 4950 0    60   Input ~ 0
-AD4
 Text GLabel 8750 4950 0    60   Input ~ 0
+AD4
+Text GLabel 8000 4950 0    60   Input ~ 0
 AD5
-Text GLabel 9550 4950 0    60   Input ~ 0
-AD6
 Text GLabel 10350 4950 0    60   Input ~ 0
+AD6
+Text GLabel 9550 4950 0    60   Input ~ 0
 AD7
-Text GLabel 5550 6000 2    60   Input ~ 0
-A0
 Text GLabel 6200 6000 2    60   Input ~ 0
+A0
+Text GLabel 5550 6000 2    60   Input ~ 0
 A1
 Text GLabel 7050 6000 2    60   Input ~ 0
 A2
 Text GLabel 7850 6000 2    60   Input ~ 0
 A3
-Text GLabel 8550 6000 2    60   Input ~ 0
-A4
 Text GLabel 9350 6000 2    60   Input ~ 0
+A4
+Text GLabel 8550 6000 2    60   Input ~ 0
 A5
-Text GLabel 10150 6000 2    60   Input ~ 0
-A6
 Text GLabel 10950 6000 2    60   Input ~ 0
+A6
+Text GLabel 8000 3750 0    60   Input ~ 0
 A7
 $Comp
 L megaduino-rescue:MCP2562-E_P U2
@@ -672,8 +672,8 @@ F 3 "" H 3350 6600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 8200 1550 0    60   Input ~ 0
-JS0
-Text GLabel 8000 1650 0    60   Input ~ 0
+D0
+Text GLabel 7700 1000 0    60   Input ~ 0
 JS2
 Text GLabel 4300 3050 2    60   Input ~ 0
 INJ3
@@ -1061,92 +1061,16 @@ Wire Wire Line
 Wire Wire Line
 	3450 4850 3450 4900
 $Comp
-L megaduino-rescue:Conn_01x05_Male-conn J4
-U 1 1 5BC6C2E9
-P 1900 1350
-F 0 "J4" H 1900 1650 50  0000 C CNN
-F 1 "Conn_01x05_Male" H 1900 1050 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x05_Pitch2.54mm" H 1900 1350 50  0001 C CNN
-F 3 "" H 1900 1350 50  0001 C CNN
-	1    1900 1350
-	1    0    0    -1  
-$EndComp
-$Comp
-L megaduino-rescue:Conn_01x04_Male-conn J5
-U 1 1 5BC6C354
-P 2200 1250
-F 0 "J5" H 2200 1450 50  0000 C CNN
-F 1 "Conn_01x04_Male" H 2200 950 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 2200 1250 50  0001 C CNN
-F 3 "" H 2200 1250 50  0001 C CNN
-	1    2200 1250
-	1    0    0    -1  
-$EndComp
-$Comp
-L megaduino-rescue:Conn_01x03_Male-conn J6
-U 1 1 5BC6C3B9
-P 2500 1250
-F 0 "J6" H 2500 1450 50  0000 C CNN
-F 1 "Conn_01x03_Male" H 2500 1050 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 2500 1250 50  0001 C CNN
-F 3 "" H 2500 1250 50  0001 C CNN
-	1    2500 1250
-	1    0    0    -1  
-$EndComp
-$Comp
-L megaduino-rescue:Conn_01x05_Male-conn J8
-U 1 1 5BC6C574
-P 1600 1350
-F 0 "J8" H 1600 1650 50  0000 C CNN
-F 1 "Conn_01x05_Male" H 1600 1050 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x05_Pitch2.54mm" H 1600 1350 50  0001 C CNN
-F 3 "" H 1600 1350 50  0001 C CNN
-	1    1600 1350
-	1    0    0    -1  
-$EndComp
-$Comp
-L megaduino-rescue:Conn_01x05_Male-conn J7
-U 1 1 5BC6C604
-P 1300 1350
-F 0 "J7" H 1300 1650 50  0000 C CNN
-F 1 "Conn_01x05_Male" H 1300 1050 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x05_Pitch2.54mm" H 1300 1350 50  0001 C CNN
-F 3 "" H 1300 1350 50  0001 C CNN
-	1    1300 1350
-	1    0    0    -1  
-$EndComp
-$Comp
-L megaduino-rescue:Conn_01x05_Male-conn J9
-U 1 1 5BC6C76E
-P 1000 1350
-F 0 "J9" H 1000 1650 50  0000 C CNN
-F 1 "Conn_01x05_Male" H 1000 1050 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x05_Pitch2.54mm" H 1000 1350 50  0001 C CNN
-F 3 "" H 1000 1350 50  0001 C CNN
-	1    1000 1350
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:Earth #PWR021
 U 1 1 5BC6E2D7
-P 2750 1750
-F 0 "#PWR021" H 2750 1500 50  0001 C CNN
-F 1 "Earth" H 2750 1600 50  0001 C CNN
-F 2 "" H 2750 1750 50  0001 C CNN
-F 3 "" H 2750 1750 50  0001 C CNN
-	1    2750 1750
+P 950 2200
+F 0 "#PWR021" H 950 1950 50  0001 C CNN
+F 1 "Earth" H 950 2050 50  0001 C CNN
+F 2 "" H 950 2200 50  0001 C CNN
+F 3 "" H 950 2200 50  0001 C CNN
+	1    950  2200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2700 1150 2750 1150
-Wire Wire Line
-	2750 1150 2750 1250
-Wire Wire Line
-	2700 1250 2750 1250
-Connection ~ 2750 1250
-Wire Wire Line
-	2700 1350 2750 1350
-Connection ~ 2750 1350
 $Comp
 L Memory_EEPROM:AT24CS02-XHM U5
 U 1 1 5BE3283B
@@ -1222,10 +1146,6 @@ Wire Wire Line
 	5500 5800 5650 5800
 Wire Wire Line
 	6550 2500 6550 2550
-Wire Wire Line
-	2750 1250 2750 1350
-Wire Wire Line
-	2750 1350 2750 1750
 Wire Wire Line
 	6950 3900 7350 3900
 Wire Wire Line
@@ -1320,26 +1240,9 @@ NoConn ~ 10300 2750
 NoConn ~ 10300 2850
 NoConn ~ 10300 2950
 NoConn ~ 10300 3050
-NoConn ~ 1500 1150
-NoConn ~ 1500 1250
 NoConn ~ 1500 1350
 NoConn ~ 1500 1450
 NoConn ~ 1500 1550
-NoConn ~ 1800 1550
-NoConn ~ 1800 1450
-NoConn ~ 1800 1350
-NoConn ~ 1800 1250
-NoConn ~ 1800 1150
-NoConn ~ 2100 1150
-NoConn ~ 2100 1250
-NoConn ~ 2100 1350
-NoConn ~ 2100 1450
-NoConn ~ 2100 1550
-NoConn ~ 2400 1450
-NoConn ~ 2400 1350
-NoConn ~ 2400 1250
-NoConn ~ 2400 1150
-NoConn ~ 1200 1150
 NoConn ~ 1200 1250
 NoConn ~ 1200 1350
 NoConn ~ 1200 1450
@@ -1398,7 +1301,6 @@ F 3 "" H 6500 6000 50  0001 C CNN
 	1    6500 6000
 	1    0    0    -1  
 $EndComp
-NoConn ~ 7300 3150
 $Comp
 L Device:R R2
 U 1 1 5C0DDE91
@@ -1580,20 +1482,95 @@ Wire Wire Line
 Connection ~ 3650 3500
 Wire Wire Line
 	3650 3500 3450 3500
-$Comp
-L megaduino-rescue:Conn_01x05_Male-conn J10
-U 1 1 5C28D3FB
-P 700 1350
-F 0 "J10" H 700 1650 50  0000 C CNN
-F 1 "Conn_01x05_Male" H 700 1050 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x05_Pitch2.54mm" H 700 1350 50  0001 C CNN
-F 3 "" H 700 1350 50  0001 C CNN
-	1    700  1350
-	1    0    0    -1  
-$EndComp
-NoConn ~ 900  1150
+Wire Wire Line
+	950  1150 900  1150
 NoConn ~ 900  1250
 NoConn ~ 900  1350
 NoConn ~ 900  1450
 NoConn ~ 900  1550
+Wire Wire Line
+	1200 1150 1250 1150
+Wire Wire Line
+	1500 1150 1550 1150
+$Comp
+L Connector:Conn_01x10_Male J4
+U 1 1 5C0F028F
+P 700 1550
+F 0 "J4" H 806 2128 50  0000 C CNN
+F 1 "Conn_01x10_Male" H 806 2037 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x10_Pitch2.54mm" H 700 1550 50  0001 C CNN
+F 3 "~" H 700 1550 50  0001 C CNN
+	1    700  1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x10_Male J5
+U 1 1 5C0F0345
+P 1000 1550
+F 0 "J5" H 1106 2128 50  0000 C CNN
+F 1 "Conn_01x10_Male" H 1106 2037 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x10_Pitch2.54mm" H 1000 1550 50  0001 C CNN
+F 3 "~" H 1000 1550 50  0001 C CNN
+	1    1000 1550
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1500 1650
+NoConn ~ 1500 1750
+NoConn ~ 1500 1850
+NoConn ~ 900  1950
+NoConn ~ 900  1850
+NoConn ~ 900  1750
+NoConn ~ 900  1650
+NoConn ~ 1200 1750
+NoConn ~ 1200 1850
+NoConn ~ 1200 1950
+NoConn ~ 1200 1650
+Wire Wire Line
+	950  2150 1250 2150
+Connection ~ 950  2150
+Wire Wire Line
+	950  2150 950  2200
+Wire Wire Line
+	1250 2150 1550 2150
+Connection ~ 1250 2150
+Wire Wire Line
+	1550 1150 1550 2150
+Wire Wire Line
+	950  1150 950  2050
+Wire Wire Line
+	1250 1150 1250 2050
+Wire Wire Line
+	1600 1250 1500 1250
+NoConn ~ 7700 1100
+NoConn ~ 7700 1200
+NoConn ~ 7700 1300
+NoConn ~ 7700 1400
+Text GLabel 2600 4550 2    60   Input ~ 0
+JS0
+Text GLabel 1600 2050 2    60   Input ~ 0
+JS0
+Wire Wire Line
+	1600 2050 1500 2050
+NoConn ~ 1500 1950
+$Comp
+L Connector:Conn_01x10_Male J6
+U 1 1 5C10F2EC
+P 1300 1550
+F 0 "J6" H 1406 2128 50  0000 C CNN
+F 1 "Conn_01x10_Male" H 1406 2037 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x10_Pitch2.54mm" H 1300 1550 50  0001 C CNN
+F 3 "~" H 1300 1550 50  0001 C CNN
+	1    1300 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	900  2050 950  2050
+Connection ~ 950  2050
+Wire Wire Line
+	950  2050 950  2150
+Wire Wire Line
+	1200 2050 1250 2050
+Connection ~ 1250 2050
+Wire Wire Line
+	1250 2050 1250 2150
 $EndSCHEMATC
