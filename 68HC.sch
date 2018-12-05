@@ -167,25 +167,25 @@ Text GLabel 7700 1100 0    60   Input ~ 0
 RX
 Text GLabel 7700 1200 0    60   Input ~ 0
 TX
-Text GLabel 10700 4050 2    60   Input ~ 0
+Text GLabel 8000 2050 0    60   Input ~ 0
 INJ1
-Text GLabel 10400 3950 2    60   Input ~ 0
+Text GLabel 8200 2150 0    60   Input ~ 0
 INJ2
 Text GLabel 8000 2650 0    60   Input ~ 0
 IRQ1
 Text GLabel 8200 2550 0    60   Input ~ 0
 IRQ0
-Text GLabel 8000 2050 0    60   Input ~ 0
-IGN1
-Text GLabel 8200 2150 0    60   Input ~ 0
-IGN2
 Text GLabel 10950 3850 2    60   Input ~ 0
+IGN1
+Text GLabel 10400 3950 2    60   Input ~ 0
+IGN2
+Text GLabel 10700 4050 2    60   Input ~ 0
 ECL
 Text GLabel 8200 1750 0    60   Input ~ 0
 FP
 Text GLabel 8200 2750 0    60   Input ~ 0
 FAN
-Text GLabel 7700 1400 0    60   Input ~ 0
+Text GLabel 7600 3300 1    60   Input ~ 0
 JS12
 $Comp
 L power:Earth #PWR05
@@ -222,9 +222,9 @@ F 3 "" H 10850 3750 50  0001 C CNN
 $EndComp
 Text GLabel 8000 1650 0    60   Input ~ 0
 Idle
-Text GLabel 8200 2350 0    60   Input ~ 0
-INJ3
 Text GLabel 8000 2250 0    60   Input ~ 0
+INJ3
+Text GLabel 8200 2350 0    60   Input ~ 0
 INJ4
 $Comp
 L power:+12V #PWR011
@@ -563,7 +563,7 @@ AR Path="/5BBE3236" Ref="U2"  Part="1"
 AR Path="/5BBC1BA7/5BBE3236" Ref="U2"  Part="1" 
 F 0 "U2" H 6150 2400 50  0000 L CNN
 F 1 "MCP2562-E/P" H 6650 2400 50  0000 L CNN
-F 2 "Housings_DIP:DIP-8_W7.62mm" H 6550 1550 50  0001 C CIN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 6550 1550 50  0001 C CIN
 F 3 "" H 6550 2050 50  0001 C CNN
 	1    6550 2050
 	-1   0    0    -1  
@@ -673,7 +673,7 @@ F 3 "" H 3350 6600 50  0001 C CNN
 $EndComp
 Text GLabel 8200 1550 0    60   Input ~ 0
 D0
-Text GLabel 7700 1000 0    60   Input ~ 0
+Text GLabel 7700 1400 0    60   Input ~ 0
 JS2
 Text GLabel 4300 3050 2    60   Input ~ 0
 INJ3
@@ -1159,9 +1159,6 @@ Wire Wire Line
 	6550 4250 6550 4300
 Wire Wire Line
 	6550 3600 6550 3550
-NoConn ~ 6150 3800
-NoConn ~ 6150 3900
-NoConn ~ 6150 4000
 $Comp
 L Amplifier_Operational:LMV324 U1
 U 5 1 5C07D849
@@ -1306,7 +1303,7 @@ L Device:R R2
 U 1 1 5C0DDE91
 P 7350 3600
 F 0 "R2" H 7420 3646 50  0000 L CNN
-F 1 "R" H 7420 3555 50  0000 L CNN
+F 1 "1k" H 7420 3555 50  0000 L CNN
 F 2 "Resistors_SMD:R_0805_HandSoldering" V 7280 3600 50  0001 C CNN
 F 3 "~" H 7350 3600 50  0001 C CNN
 	1    7350 3600
@@ -1317,7 +1314,7 @@ L Device:R R3
 U 1 1 5C0DDFFF
 P 7450 3600
 F 0 "R3" H 7520 3646 50  0000 L CNN
-F 1 "R" H 7520 3555 50  0000 L CNN
+F 1 "1k" H 7520 3555 50  0000 L CNN
 F 2 "Resistors_SMD:R_0805_HandSoldering" V 7380 3600 50  0001 C CNN
 F 3 "~" H 7450 3600 50  0001 C CNN
 	1    7450 3600
@@ -1355,7 +1352,6 @@ Wire Wire Line
 Wire Wire Line
 	7350 3400 7350 3450
 Connection ~ 7400 3400
-NoConn ~ 8300 3350
 Text GLabel 8000 2450 0    60   Input ~ 0
 JS7
 $Comp
@@ -1364,7 +1360,7 @@ U 1 1 5C18B068
 P 3650 2700
 F 0 "Q4" H 3856 2746 50  0000 L CNN
 F 1 "Q_NMOS_GDS" H 3856 2655 50  0000 L CNN
-F 2 "TO_SOT_Packages_THT:TO-220-3_Vertical" H 3850 2800 50  0001 C CNN
+F 2 "TO_SOT_Packages_THT:TO-251_IPAK_Vertical" H 3850 2800 50  0001 C CNN
 F 3 "~" H 3650 2700 50  0001 C CNN
 	1    3650 2700
 	-1   0    0    -1  
@@ -1375,7 +1371,7 @@ U 1 1 5C19C0BD
 P 3450 3050
 F 0 "Q3" H 3656 3096 50  0000 L CNN
 F 1 "Q_NMOS_GDS" H 3656 3005 50  0000 L CNN
-F 2 "TO_SOT_Packages_THT:TO-220-3_Vertical" H 3650 3150 50  0001 C CNN
+F 2 "TO_SOT_Packages_THT:TO-251_IPAK_Vertical" H 3650 3150 50  0001 C CNN
 F 3 "~" H 3450 3050 50  0001 C CNN
 	1    3450 3050
 	-1   0    0    -1  
@@ -1409,7 +1405,7 @@ L Device:R R23
 U 1 1 5C1E1996
 P 4100 2700
 F 0 "R23" V 3893 2700 50  0000 C CNN
-F 1 "R" V 3984 2700 50  0000 C CNN
+F 1 "1k" V 3984 2700 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805_HandSoldering" V 4030 2700 50  0001 C CNN
 F 3 "~" H 4100 2700 50  0001 C CNN
 	1    4100 2700
@@ -1420,7 +1416,7 @@ L Device:R R24
 U 1 1 5C1E1A4C
 P 4100 3050
 F 0 "R24" V 3893 3050 50  0000 C CNN
-F 1 "R" V 3984 3050 50  0000 C CNN
+F 1 "1k" V 3984 3050 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805_HandSoldering" V 4030 3050 50  0001 C CNN
 F 3 "~" H 4100 3050 50  0001 C CNN
 	1    4100 3050
@@ -1431,7 +1427,7 @@ L Device:R R22
 U 1 1 5C1E1B74
 P 3900 3300
 F 0 "R22" H 3830 3254 50  0000 R CNN
-F 1 "R" H 3830 3345 50  0000 R CNN
+F 1 "100k" H 3830 3345 50  0000 R CNN
 F 2 "Resistors_SMD:R_0805_HandSoldering" V 3830 3300 50  0001 C CNN
 F 3 "~" H 3900 3300 50  0001 C CNN
 	1    3900 3300
@@ -1442,7 +1438,7 @@ L Device:R R21
 U 1 1 5C1E1C5A
 P 3750 3300
 F 0 "R21" H 3680 3254 50  0000 R CNN
-F 1 "R" H 3680 3345 50  0000 R CNN
+F 1 "100k" H 3680 3345 50  0000 R CNN
 F 2 "Resistors_SMD:R_0805_HandSoldering" V 3680 3300 50  0001 C CNN
 F 3 "~" H 3750 3300 50  0001 C CNN
 	1    3750 3300
@@ -1573,4 +1569,203 @@ Wire Wire Line
 Connection ~ 1250 2050
 Wire Wire Line
 	1250 2050 1250 2150
+$Comp
+L Device:Jumper JP1
+U 1 1 5C07791C
+P 7950 3350
+F 0 "JP1" H 7950 3614 50  0000 C CNN
+F 1 "Jumper" H 7950 3523 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 7950 3350 50  0001 C CNN
+F 3 "~" H 7950 3350 50  0001 C CNN
+	1    7950 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 3350 8250 3350
+Wire Wire Line
+	7600 3300 7600 3350
+Wire Wire Line
+	7600 3350 7650 3350
+Wire Wire Line
+	6150 3800 6100 3800
+Wire Wire Line
+	6100 3800 6100 3900
+Wire Wire Line
+	6100 3900 6150 3900
+Wire Wire Line
+	6100 3900 6100 4000
+Wire Wire Line
+	6100 4000 6150 4000
+Connection ~ 6100 3900
+Wire Wire Line
+	6100 4000 6100 4250
+Wire Wire Line
+	6100 4250 6550 4250
+Connection ~ 6100 4000
+$Comp
+L Device:LED D1
+U 1 1 5C0F58DE
+P 4050 700
+F 0 "D1" H 4041 916 50  0000 C CNN
+F 1 "LED" H 4041 825 50  0000 C CNN
+F 2 "LEDs:LED_0805_HandSoldering" H 4050 700 50  0001 C CNN
+F 3 "~" H 4050 700 50  0001 C CNN
+	1    4050 700 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 5C0F5C46
+P 4050 900
+F 0 "D2" H 4041 1116 50  0000 C CNN
+F 1 "LED" H 4041 1025 50  0000 C CNN
+F 2 "LEDs:LED_0805_HandSoldering" H 4050 900 50  0001 C CNN
+F 3 "~" H 4050 900 50  0001 C CNN
+	1    4050 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D3
+U 1 1 5C0F5CC2
+P 4050 1100
+F 0 "D3" H 4041 1316 50  0000 C CNN
+F 1 "LED" H 4041 1225 50  0000 C CNN
+F 2 "LEDs:LED_0805_HandSoldering" H 4050 1100 50  0001 C CNN
+F 3 "~" H 4050 1100 50  0001 C CNN
+	1    4050 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D4
+U 1 1 5C0F5D3E
+P 4050 1300
+F 0 "D4" H 4041 1516 50  0000 C CNN
+F 1 "LED" H 4041 1425 50  0000 C CNN
+F 2 "LEDs:LED_0805_HandSoldering" H 4050 1300 50  0001 C CNN
+F 3 "~" H 4050 1300 50  0001 C CNN
+	1    4050 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR08
+U 1 1 5C0F5DD1
+P 3850 1700
+F 0 "#PWR08" H 3850 1450 50  0001 C CNN
+F 1 "Earth" H 3850 1550 50  0001 C CNN
+F 2 "" H 3850 1700 50  0001 C CNN
+F 3 "~" H 3850 1700 50  0001 C CNN
+	1    3850 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 1350 3850 1300
+Wire Wire Line
+	3850 1300 3900 1300
+Wire Wire Line
+	3850 1300 3850 1100
+Wire Wire Line
+	3850 1100 3900 1100
+Connection ~ 3850 1300
+Wire Wire Line
+	3850 1100 3850 900 
+Wire Wire Line
+	3850 900  3900 900 
+Connection ~ 3850 1100
+Wire Wire Line
+	3850 900  3850 700 
+Wire Wire Line
+	3850 700  3900 700 
+Connection ~ 3850 900 
+$Comp
+L Device:R R25
+U 1 1 5C158019
+P 3850 1500
+F 0 "R25" H 3920 1546 50  0000 L CNN
+F 1 "R" H 3920 1455 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3780 1500 50  0001 C CNN
+F 3 "~" H 3850 1500 50  0001 C CNN
+	1    3850 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 1700 3850 1650
+Text GLabel 4250 1300 2    60   Input ~ 0
+INJ4
+Text GLabel 4250 1100 2    60   Input ~ 0
+INJ3
+Text GLabel 4250 900  2    60   Input ~ 0
+INJ2
+Text GLabel 4250 700  2    60   Input ~ 0
+INJ1
+Wire Wire Line
+	4250 700  4200 700 
+Wire Wire Line
+	4250 900  4200 900 
+Wire Wire Line
+	4250 1100 4200 1100
+Wire Wire Line
+	4250 1300 4200 1300
+$Comp
+L Device:LED D5
+U 1 1 5C1F3317
+P 5000 700
+F 0 "D5" H 4991 916 50  0000 C CNN
+F 1 "LED" H 4991 825 50  0000 C CNN
+F 2 "LEDs:LED_0805_HandSoldering" H 5000 700 50  0001 C CNN
+F 3 "~" H 5000 700 50  0001 C CNN
+	1    5000 700 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D6
+U 1 1 5C1F33AD
+P 5000 900
+F 0 "D6" H 4991 1116 50  0000 C CNN
+F 1 "LED" H 4991 1025 50  0000 C CNN
+F 2 "LEDs:LED_0805_HandSoldering" H 5000 900 50  0001 C CNN
+F 3 "~" H 5000 900 50  0001 C CNN
+	1    5000 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R26
+U 1 1 5C1F3445
+P 4800 1100
+F 0 "R26" H 4870 1146 50  0000 L CNN
+F 1 "R" H 4870 1055 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 4730 1100 50  0001 C CNN
+F 3 "~" H 4800 1100 50  0001 C CNN
+	1    4800 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR010
+U 1 1 5C1F34DF
+P 4800 1300
+F 0 "#PWR010" H 4800 1050 50  0001 C CNN
+F 1 "Earth" H 4800 1150 50  0001 C CNN
+F 2 "" H 4800 1300 50  0001 C CNN
+F 3 "~" H 4800 1300 50  0001 C CNN
+	1    4800 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 1300 4800 1250
+Wire Wire Line
+	4800 950  4800 900 
+Wire Wire Line
+	4800 900  4850 900 
+Wire Wire Line
+	4800 900  4800 700 
+Wire Wire Line
+	4800 700  4850 700 
+Connection ~ 4800 900 
+Text GLabel 5200 900  2    60   Input ~ 0
+IGN2
+Text GLabel 5200 700  2    60   Input ~ 0
+IGN1
+Wire Wire Line
+	5200 900  5150 900 
+Wire Wire Line
+	5200 700  5150 700 
 $EndSCHEMATC
