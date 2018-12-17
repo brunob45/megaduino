@@ -1371,14 +1371,10 @@ F 3 "" H 6700 1600 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6700 1650 6700 1600
-Text GLabel 6150 1950 0    60   Input ~ 0
+Text GLabel 6050 1850 0    60   Input ~ 0
 CANH
-Text GLabel 6150 2150 0    60   Input ~ 0
+Text GLabel 6050 2250 0    60   Input ~ 0
 CANL
-Wire Wire Line
-	6150 2150 6200 2150
-Wire Wire Line
-	6150 1950 6200 1950
 $Comp
 L Connector:Conn_01x13_Male J3
 U 1 1 5C017DBB
@@ -1419,10 +1415,10 @@ F 3 "~" H 1650 2100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:Earth #PWR?
+L power:Earth #PWR016
 U 1 1 5C3541C7
 P 1900 2250
-F 0 "#PWR?" H 1900 2000 50  0001 C CNN
+F 0 "#PWR016" H 1900 2000 50  0001 C CNN
 F 1 "Earth" H 1900 2100 50  0001 C CNN
 F 2 "" H 1900 2250 50  0001 C CNN
 F 3 "~" H 1900 2250 50  0001 C CNN
@@ -1438,4 +1434,33 @@ Wire Wire Line
 Connection ~ 1900 2200
 Wire Wire Line
 	1900 2200 1900 2250
+$Comp
+L Device:R R23
+U 1 1 5C187C7E
+P 6100 2050
+F 0 "R23" H 6170 2096 50  0000 L CNN
+F 1 "120" H 6170 2005 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6030 2050 50  0001 C CNN
+F 3 "~" H 6100 2050 50  0001 C CNN
+	1    6100 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 1850 6100 1850
+Wire Wire Line
+	6100 1850 6100 1900
+Wire Wire Line
+	6050 2250 6100 2250
+Wire Wire Line
+	6100 2250 6100 2200
+Connection ~ 6100 2250
+Wire Wire Line
+	6100 1850 6200 1850
+Wire Wire Line
+	6200 1850 6200 1950
+Connection ~ 6100 1850
+Wire Wire Line
+	6200 2250 6200 2150
+Wire Wire Line
+	6100 2250 6200 2250
 $EndSCHEMATC
