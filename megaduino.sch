@@ -182,13 +182,13 @@ FAN
 $Comp
 L power:Earth #PWR05
 U 1 1 5BBC8778
-P 7750 1500
-F 0 "#PWR05" H 7750 1250 50  0001 C CNN
-F 1 "Earth" H 7750 1350 50  0001 C CNN
-F 2 "" H 7750 1500 50  0001 C CNN
-F 3 "" H 7750 1500 50  0001 C CNN
-	1    7750 1500
-	1    0    0    -1  
+P 7750 1400
+F 0 "#PWR05" H 7750 1150 50  0001 C CNN
+F 1 "Earth" H 7750 1250 50  0001 C CNN
+F 2 "" H 7750 1400 50  0001 C CNN
+F 3 "" H 7750 1400 50  0001 C CNN
+	1    7750 1400
+	-1   0    0    1   
 $EndComp
 $Comp
 L power:Earth #PWR06
@@ -214,9 +214,9 @@ F 3 "" H 10850 3750 50  0001 C CNN
 $EndComp
 Text GLabel 8200 2150 0    60   Input ~ 0
 Idle
-Text GLabel 8200 1550 0    60   Input ~ 0
+Text GLabel 8200 1750 0    60   Input ~ 0
 INJ3
-Text GLabel 8000 1650 0    60   Input ~ 0
+Text GLabel 8000 2050 0    60   Input ~ 0
 INJ4
 $Comp
 L power:+12V #PWR011
@@ -232,12 +232,12 @@ $EndComp
 $Comp
 L power:+5V #PWR012
 U 1 1 5BBCED9F
-P 10700 3500
-F 0 "#PWR012" H 10700 3350 50  0001 C CNN
-F 1 "+5V" H 10700 3640 50  0000 C CNN
-F 2 "" H 10700 3500 50  0001 C CNN
-F 3 "" H 10700 3500 50  0001 C CNN
-	1    10700 3500
+P 10750 3500
+F 0 "#PWR012" H 10750 3350 50  0001 C CNN
+F 1 "+5V" H 10750 3640 50  0000 C CNN
+F 2 "" H 10750 3500 50  0001 C CNN
+F 3 "" H 10750 3500 50  0001 C CNN
+	1    10750 3500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -547,8 +547,6 @@ Text GLabel 10950 6000 2    60   Input ~ 0
 A6
 Text GLabel 8000 3750 0    60   Input ~ 0
 A7
-Text GLabel 8200 1750 0    60   Input ~ 0
-D0
 Connection ~ 5700 5350
 Wire Wire Line
 	5700 5300 5700 5350
@@ -707,12 +705,6 @@ Wire Wire Line
 	8300 2050 8000 2050
 Wire Wire Line
 	8300 1750 8200 1750
-Wire Wire Line
-	8300 1650 8000 1650
-Wire Wire Line
-	8300 1550 8200 1550
-Wire Wire Line
-	7750 1450 7750 1500
 Wire Wire Line
 	8300 1450 7750 1450
 Wire Wire Line
@@ -1129,8 +1121,6 @@ Wire Wire Line
 Wire Wire Line
 	7350 3400 7350 3450
 Connection ~ 7400 3400
-Text GLabel 8000 2050 0    60   Input ~ 0
-D2
 Text GLabel 5550 1050 2    60   Input ~ 0
 JS0
 Wire Wire Line
@@ -1192,28 +1182,10 @@ F 3 "~" H 5400 1300 50  0001 C CNN
 	1    5400 1300
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:Earth #PWR08
-U 1 1 5C2A9162
-P 5350 1750
-F 0 "#PWR08" H 5350 1500 50  0001 C CNN
-F 1 "Earth" H 5350 1600 50  0001 C CNN
-F 2 "" H 5350 1750 50  0001 C CNN
-F 3 "~" H 5350 1750 50  0001 C CNN
-	1    5350 1750
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5500 1700 5500 1500
 Wire Wire Line
-	5350 1750 5350 1700
-Connection ~ 5350 1700
-Wire Wire Line
-	5350 1700 5500 1700
-Wire Wire Line
 	4800 1700 4800 1650
-Wire Wire Line
-	4800 1700 5350 1700
 Wire Wire Line
 	5150 1300 5200 1300
 Wire Wire Line
@@ -1262,28 +1234,10 @@ F 3 "~" H 4650 2250 50  0001 C CNN
 	1    4650 2250
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:Earth #PWR07
-U 1 1 5C33400D
-P 4600 2700
-F 0 "#PWR07" H 4600 2450 50  0001 C CNN
-F 1 "Earth" H 4600 2550 50  0001 C CNN
-F 2 "" H 4600 2700 50  0001 C CNN
-F 3 "~" H 4600 2700 50  0001 C CNN
-	1    4600 2700
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4750 2650 4750 2450
 Wire Wire Line
-	4600 2700 4600 2650
-Connection ~ 4600 2650
-Wire Wire Line
-	4600 2650 4750 2650
-Wire Wire Line
 	4050 2650 4050 2600
-Wire Wire Line
-	4050 2650 4600 2650
 Wire Wire Line
 	4400 2250 4450 2250
 Wire Wire Line
@@ -1389,20 +1343,14 @@ $EndComp
 $Comp
 L Device:D_Schottky D1
 U 1 1 5C3286CF
-P 10500 3550
-F 0 "D1" H 10500 3766 50  0000 C CNN
-F 1 "D_Schottky" H 10500 3675 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 10500 3550 50  0001 C CNN
-F 3 "~" H 10500 3550 50  0001 C CNN
-	1    10500 3550
+P 10550 3550
+F 0 "D1" H 10550 3766 50  0000 C CNN
+F 1 "D_Schottky" H 10550 3675 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 10550 3550 50  0001 C CNN
+F 3 "~" H 10550 3550 50  0001 C CNN
+	1    10550 3550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	10350 3550 10300 3550
-Wire Wire Line
-	10650 3550 10700 3550
-Wire Wire Line
-	10700 3550 10700 3500
 $Comp
 L Connector:Conn_01x02_Male J4
 U 1 1 5C353ECF
@@ -1414,26 +1362,6 @@ F 3 "~" H 1650 2100 50  0001 C CNN
 	1    1650 2100
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:Earth #PWR016
-U 1 1 5C3541C7
-P 1900 2250
-F 0 "#PWR016" H 1900 2000 50  0001 C CNN
-F 1 "Earth" H 1900 2100 50  0001 C CNN
-F 2 "" H 1900 2250 50  0001 C CNN
-F 3 "~" H 1900 2250 50  0001 C CNN
-	1    1900 2250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1900 2100 1850 2100
-Wire Wire Line
-	1900 2100 1900 2200
-Wire Wire Line
-	1850 2200 1900 2200
-Connection ~ 1900 2200
-Wire Wire Line
-	1900 2200 1900 2250
 $Comp
 L Device:R R23
 U 1 1 5C187C7E
@@ -1463,4 +1391,121 @@ Wire Wire Line
 	6200 2250 6200 2150
 Wire Wire Line
 	6100 2250 6200 2250
+$Comp
+L Connector:Conn_01x04_Male J5
+U 1 1 5C48EF5E
+P 7300 1550
+F 0 "J5" H 7400 1800 50  0000 C CNN
+F 1 "Conn_01x04_Male" H 7400 1700 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 7300 1550 50  0001 C CNN
+F 3 "~" H 7300 1550 50  0001 C CNN
+	1    7300 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 1450 7750 1400
+Wire Wire Line
+	7700 1450 7700 1550
+Wire Wire Line
+	7700 1550 8300 1550
+Wire Wire Line
+	7500 1450 7700 1450
+Wire Wire Line
+	7650 1550 7650 1650
+Wire Wire Line
+	7650 1650 8300 1650
+Wire Wire Line
+	7500 1550 7650 1550
+Wire Wire Line
+	7600 1750 7500 1750
+$Comp
+L power:Earth #PWR0106
+U 1 1 5C515326
+P 7550 1800
+F 0 "#PWR0106" H 7550 1550 50  0001 C CNN
+F 1 "Earth" H 7550 1650 50  0001 C CNN
+F 2 "" H 7550 1800 50  0001 C CNN
+F 3 "~" H 7550 1800 50  0001 C CNN
+	1    7550 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 1650 7500 1650
+Wire Wire Line
+	7550 1650 7550 1800
+Wire Wire Line
+	10300 3550 10350 3550
+Wire Wire Line
+	10700 3550 10750 3550
+Wire Wire Line
+	10750 3550 10750 3500
+Wire Wire Line
+	10350 3550 10350 3350
+Wire Wire Line
+	10350 3350 10700 3350
+Wire Wire Line
+	10700 3350 10700 1150
+Wire Wire Line
+	10700 1150 7600 1150
+Wire Wire Line
+	7600 1150 7600 1750
+Connection ~ 10350 3550
+Wire Wire Line
+	10350 3550 10400 3550
+Wire Wire Line
+	1900 2100 1850 2100
+Wire Wire Line
+	1850 2200 1900 2200
+Wire Wire Line
+	1900 2100 1900 2200
+Connection ~ 1900 2200
+Wire Wire Line
+	1900 2200 1900 2250
+$Comp
+L power:Earth #PWR016
+U 1 1 5C3541C7
+P 1900 2250
+F 0 "#PWR016" H 1900 2000 50  0001 C CNN
+F 1 "Earth" H 1900 2100 50  0001 C CNN
+F 2 "" H 1900 2250 50  0001 C CNN
+F 3 "~" H 1900 2250 50  0001 C CNN
+	1    1900 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 1700 5350 1700
+Wire Wire Line
+	5350 1700 5500 1700
+Connection ~ 5350 1700
+Wire Wire Line
+	5350 1750 5350 1700
+$Comp
+L power:Earth #PWR08
+U 1 1 5C2A9162
+P 5350 1750
+F 0 "#PWR08" H 5350 1500 50  0001 C CNN
+F 1 "Earth" H 5350 1600 50  0001 C CNN
+F 2 "" H 5350 1750 50  0001 C CNN
+F 3 "~" H 5350 1750 50  0001 C CNN
+	1    5350 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 2650 4600 2650
+Wire Wire Line
+	4600 2650 4750 2650
+Connection ~ 4600 2650
+Wire Wire Line
+	4600 2700 4600 2650
+$Comp
+L power:Earth #PWR07
+U 1 1 5C33400D
+P 4600 2700
+F 0 "#PWR07" H 4600 2450 50  0001 C CNN
+F 1 "Earth" H 4600 2550 50  0001 C CNN
+F 2 "" H 4600 2700 50  0001 C CNN
+F 3 "~" H 4600 2700 50  0001 C CNN
+	1    4600 2700
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
