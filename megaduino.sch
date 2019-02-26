@@ -145,39 +145,39 @@ F 3 "" H 9300 1950 60  0000 C CNN
 	1    9300 2750
 	1    0    0    -1  
 $EndComp
-Text GLabel 8200 3450 0    60   Input ~ 0
-A0
-Text GLabel 8000 3550 0    60   Input ~ 0
-A1
-Text GLabel 8200 3250 0    60   Input ~ 0
-A2
-Text GLabel 8200 3650 0    60   Input ~ 0
-A3
-Text GLabel 8200 4050 0    60   Input ~ 0
-A4
-Text GLabel 10500 3150 2    60   Input ~ 0
-A5
 Text GLabel 10400 3250 2    60   Input ~ 0
+A0
+Text GLabel 10950 3850 2    60   Input ~ 0
+A1
+Text GLabel 10500 3150 2    60   Input ~ 0
+A2
+Text GLabel 10400 3950 2    60   Input ~ 0
+A3
+Text GLabel 8000 3750 0    60   Input ~ 0
+A4
+Text GLabel 8200 4050 0    60   Input ~ 0
+A5
+Text GLabel 10700 4050 2    60   Input ~ 0
 A6
 Text GLabel 10150 6000 2    60   Input ~ 0
 A7
-Text GLabel 8200 2750 0    60   Input ~ 0
+Text GLabel 8200 1750 0    60   Input ~ 0
 INJ1
-Text GLabel 8000 2650 0    60   Input ~ 0
+Text GLabel 8000 2050 0    60   Input ~ 0
 INJ2
-Text GLabel 8000 2450 0    60   Input ~ 0
+Text GLabel 8000 2250 0    60   Input ~ 0
 IRQ1
 Text GLabel 8200 2350 0    60   Input ~ 0
 IRQ0
-Text GLabel 10950 3850 2    60   Input ~ 0
+Text GLabel 8200 3450 0    60   Input ~ 0
 IGN1
-Text GLabel 10400 3950 2    60   Input ~ 0
+Text GLabel 8000 3550 0    60   Input ~ 0
 IGN2
-Text GLabel 10700 4050 2    60   Input ~ 0
+Text GLabel 8200 3650 0    60   Input ~ 0
 ECL
-Text GLabel 8000 2250 0    60   Input ~ 0
+Text GLabel 8000 2450 0    60   Input ~ 0
 FP
-Text GLabel 8200 2550 0    60   Input ~ 0
+Text GLabel 8200 2150 0    60   Input ~ 0
 FAN
 $Comp
 L power:Earth #PWR05
@@ -212,11 +212,11 @@ F 3 "" H 10850 3750 50  0001 C CNN
 	1    10850 3750
 	1    0    0    -1  
 $EndComp
-Text GLabel 8200 2150 0    60   Input ~ 0
+Text GLabel 8200 2550 0    60   Input ~ 0
 Idle
-Text GLabel 8200 1750 0    60   Input ~ 0
+Text GLabel 8200 2750 0    60   Input ~ 0
 INJ3
-Text GLabel 8000 2050 0    60   Input ~ 0
+Text GLabel 8000 2650 0    60   Input ~ 0
 INJ4
 $Comp
 L power:+12V #PWR011
@@ -254,12 +254,12 @@ $EndComp
 $Comp
 L Amplifier_Operational:LMV324 U1
 U 2 1 5BBCF716
-P 6150 5450
-F 0 "U1" H 6150 5650 50  0000 L CNN
-F 1 "LMV324" H 6150 5250 50  0000 L CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 6100 5550 50  0001 C CNN
-F 3 "" H 6200 5650 50  0001 C CNN
-	2    6150 5450
+P 7700 5450
+F 0 "U1" H 7700 5650 50  0000 L CNN
+F 1 "LMV324" H 7700 5250 50  0000 L CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 7650 5550 50  0001 C CNN
+F 3 "" H 7750 5650 50  0001 C CNN
+	2    7700 5450
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -276,12 +276,12 @@ $EndComp
 $Comp
 L Amplifier_Operational:LMV324 U1
 U 4 1 5BBCF75E
-P 7700 5450
-F 0 "U1" H 7700 5650 50  0000 L CNN
-F 1 "LMV324" H 7700 5250 50  0000 L CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 7650 5550 50  0001 C CNN
-F 3 "" H 7750 5650 50  0001 C CNN
-	4    7700 5450
+P 6150 5450
+F 0 "U1" H 6150 5650 50  0000 L CNN
+F 1 "LMV324" H 6150 5250 50  0000 L CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 6100 5550 50  0001 C CNN
+F 3 "" H 6200 5650 50  0001 C CNN
+	4    6150 5450
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -545,7 +545,7 @@ Text GLabel 8550 6000 2    60   Input ~ 0
 A5
 Text GLabel 10950 6000 2    60   Input ~ 0
 A6
-Text GLabel 8000 3750 0    60   Input ~ 0
+Text GLabel 8200 3250 0    60   Input ~ 0
 A7
 Connection ~ 5700 5350
 Wire Wire Line
