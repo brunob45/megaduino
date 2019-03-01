@@ -15,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L megaduino-rescue:Conn_01x20_Female-Connector J1
+L Connector:Conn_01x20_Female J1
 U 1 1 5BBC1C66
 P 2200 5250
 F 0 "J1" H 2200 6250 50  0000 C CNN
@@ -26,7 +26,7 @@ F 3 "" H 2200 5250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L megaduino-rescue:Conn_01x20_Female-Connector J2
+L Connector:Conn_01x20_Female J2
 U 1 1 5BBC1C9D
 P 2300 5350
 F 0 "J2" H 2300 6350 50  0000 C CNN
@@ -91,7 +91,7 @@ INJ2
 Text GLabel 2850 6250 2    60   Input ~ 0
 INJ1
 $Comp
-L megaduino-rescue:Earth-power #PWR01
+L power:Earth #PWR01
 U 1 1 5BBC25BA
 P 3450 4900
 F 0 "#PWR01" H 3450 4650 50  0001 C CNN
@@ -102,7 +102,7 @@ F 3 "" H 3450 4900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L megaduino-rescue:Earth-power #PWR02
+L power:Earth #PWR02
 U 1 1 5BBC25DA
 P 1550 4500
 F 0 "#PWR02" H 1550 4250 50  0001 C CNN
@@ -113,7 +113,7 @@ F 3 "" H 1550 4500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L megaduino-rescue:Earth-power #PWR03
+L power:Earth #PWR03
 U 1 1 5BBC25FA
 P 1500 6200
 F 0 "#PWR03" H 1500 5950 50  0001 C CNN
@@ -124,7 +124,7 @@ F 3 "" H 1500 6200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L megaduino-rescue:+5V-power #PWR04
+L power:+5V #PWR04
 U 1 1 5BBC2DAE
 P 1700 6300
 F 0 "#PWR04" H 1700 6150 50  0001 C CNN
@@ -145,27 +145,27 @@ F 3 "" H 9300 1950 60  0000 C CNN
 	1    9300 2750
 	1    0    0    -1  
 $EndComp
-Text GLabel 8200 3650 0    60   Input ~ 0
+Text GLabel 8200 3450 0    60   Input ~ 0
 A0
 Text GLabel 8000 3550 0    60   Input ~ 0
 A1
 Text GLabel 8200 3250 0    60   Input ~ 0
 A2
-Text GLabel 8200 3450 0    60   Input ~ 0
+Text GLabel 8200 3650 0    60   Input ~ 0
 A3
 Text GLabel 8000 3750 0    60   Input ~ 0
 A4
-Text GLabel 8200 4050 0    60   Input ~ 0
+Text GLabel 10400 3250 2    60   Input ~ 0
 A5
 Text GLabel 10500 3150 2    60   Input ~ 0
 A6
-Text GLabel 10150 6000 2    60   Input ~ 0
+Text GLabel 8550 6000 2    60   Input ~ 0
 A7
-Text GLabel 8200 2550 0    60   Input ~ 0
+Text GLabel 8200 2750 0    60   Input ~ 0
 INJ1
-Text GLabel 8000 2450 0    60   Input ~ 0
-INJ2
 Text GLabel 8000 2650 0    60   Input ~ 0
+INJ2
+Text GLabel 8000 2450 0    60   Input ~ 0
 IRQ1
 Text GLabel 8200 2350 0    60   Input ~ 0
 IRQ0
@@ -177,10 +177,10 @@ Text GLabel 8000 2250 0    60   Input ~ 0
 ECL
 Text GLabel 10950 3850 2    60   Input ~ 0
 FP
-Text GLabel 8200 2750 0    60   Input ~ 0
+Text GLabel 8200 2550 0    60   Input ~ 0
 FAN
 $Comp
-L megaduino-rescue:Earth-power #PWR05
+L power:Earth #PWR05
 U 1 1 5BBC8778
 P 7750 1400
 F 0 "#PWR05" H 7750 1150 50  0001 C CNN
@@ -191,7 +191,7 @@ F 3 "" H 7750 1400 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L megaduino-rescue:Earth-power #PWR06
+L power:Earth #PWR06
 U 1 1 5BBC8796
 P 7800 3100
 F 0 "#PWR06" H 7800 2850 50  0001 C CNN
@@ -202,7 +202,7 @@ F 3 "" H 7800 3100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L megaduino-rescue:+3.3V-power #PWR09
+L power:+3.3V #PWR09
 U 1 1 5BBCB194
 P 10850 3750
 F 0 "#PWR09" H 10850 3600 50  0001 C CNN
@@ -219,7 +219,7 @@ INJ3
 Text GLabel 10700 4050 2    60   Input ~ 0
 INJ4
 $Comp
-L megaduino-rescue:+12V-power #PWR011
+L power:+12V #PWR011
 U 1 1 5BBCE713
 P 1200 5800
 F 0 "#PWR011" H 1200 5650 50  0001 C CNN
@@ -230,7 +230,7 @@ F 3 "" H 1200 5800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L megaduino-rescue:+5V-power #PWR012
+L power:+5V #PWR012
 U 1 1 5BBCED9F
 P 10750 3500
 F 0 "#PWR012" H 10750 3350 50  0001 C CNN
@@ -241,7 +241,7 @@ F 3 "" H 10750 3500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L megaduino-rescue:LMV324-Amplifier_Operational U1
+L Amplifier_Operational:LMV324 U1
 U 1 1 5BBCF6C5
 P 5350 5450
 F 0 "U1" H 5350 5650 50  0000 L CNN
@@ -252,18 +252,18 @@ F 3 "" H 5400 5650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L megaduino-rescue:LMV324-Amplifier_Operational U1
-U 2 1 5BBCF716
+L Amplifier_Operational:LMV324 U1
+U 4 1 5BBCF716
 P 7700 5450
 F 0 "U1" H 7700 5650 50  0000 L CNN
 F 1 "LMV324" H 7700 5250 50  0000 L CNN
 F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 7650 5550 50  0001 C CNN
 F 3 "" H 7750 5650 50  0001 C CNN
-	2    7700 5450
+	4    7700 5450
 	1    0    0    -1  
 $EndComp
 $Comp
-L megaduino-rescue:LMV324-Amplifier_Operational U1
+L Amplifier_Operational:LMV324 U1
 U 3 1 5BBCF739
 P 6950 5450
 F 0 "U1" H 6950 5650 50  0000 L CNN
@@ -274,18 +274,18 @@ F 3 "" H 7000 5650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L megaduino-rescue:LMV324-Amplifier_Operational U1
-U 4 1 5BBCF75E
+L Amplifier_Operational:LMV324 U1
+U 2 1 5BBCF75E
 P 6150 5450
 F 0 "U1" H 6150 5650 50  0000 L CNN
 F 1 "LMV324" H 6150 5250 50  0000 L CNN
 F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 6100 5550 50  0001 C CNN
 F 3 "" H 6200 5650 50  0001 C CNN
-	4    6150 5450
+	2    6150 5450
 	1    0    0    -1  
 $EndComp
 $Comp
-L megaduino-rescue:LMV324-Amplifier_Operational U3
+L Amplifier_Operational:LMV324 U3
 U 1 1 5BBCF785
 P 8450 5450
 F 0 "U3" H 8450 5650 50  0000 L CNN
@@ -296,7 +296,7 @@ F 3 "" H 8500 5650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L megaduino-rescue:LMV324-Amplifier_Operational U3
+L Amplifier_Operational:LMV324 U3
 U 2 1 5BBCF7AE
 P 9250 5450
 F 0 "U3" H 9250 5650 50  0000 L CNN
@@ -307,7 +307,7 @@ F 3 "" H 9300 5650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L megaduino-rescue:LMV324-Amplifier_Operational U3
+L Amplifier_Operational:LMV324 U3
 U 3 1 5BBCF7DD
 P 10050 5450
 F 0 "U3" H 10050 5650 50  0000 L CNN
@@ -318,7 +318,7 @@ F 3 "" H 10100 5650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L megaduino-rescue:LMV324-Amplifier_Operational U3
+L Amplifier_Operational:LMV324 U3
 U 4 1 5BBCF80A
 P 10800 5450
 F 0 "U3" H 10800 5650 50  0000 L CNN
@@ -329,29 +329,29 @@ F 3 "" H 10850 5650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L megaduino-rescue:R-Device R5
+L Device:R R5
 U 1 1 5BBCF84A
-P 4900 5150
-F 0 "R5" V 4980 5150 50  0000 C CNN
-F 1 "49k" V 4900 5150 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4830 5150 50  0001 C CNN
-F 3 "" H 4900 5150 50  0001 C CNN
-	1    4900 5150
+P 6500 5150
+F 0 "R5" V 6580 5150 50  0000 C CNN
+F 1 "49k" V 6500 5150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6430 5150 50  0001 C CNN
+F 3 "" H 6500 5150 50  0001 C CNN
+	1    6500 5150
 	1    0    0    -1  
 $EndComp
 $Comp
-L megaduino-rescue:R-Device R6
+L Device:R R6
 U 1 1 5BBCFDF9
-P 4900 5550
-F 0 "R6" V 4980 5550 50  0000 C CNN
-F 1 "91k" V 4900 5550 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4830 5550 50  0001 C CNN
-F 3 "" H 4900 5550 50  0001 C CNN
-	1    4900 5550
+P 6500 5550
+F 0 "R6" V 6580 5550 50  0000 C CNN
+F 1 "91k" V 6500 5550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6430 5550 50  0001 C CNN
+F 3 "" H 6500 5550 50  0001 C CNN
+	1    6500 5550
 	1    0    0    -1  
 $EndComp
 $Comp
-L megaduino-rescue:R-Device R8
+L Device:R R8
 U 1 1 5BBD1FAA
 P 5700 5550
 F 0 "R8" V 5780 5550 50  0000 C CNN
@@ -362,7 +362,7 @@ F 3 "" H 5700 5550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L megaduino-rescue:R-Device R7
+L Device:R R7
 U 1 1 5BBD2041
 P 5700 5150
 F 0 "R7" V 5780 5150 50  0000 C CNN
@@ -373,29 +373,29 @@ F 3 "" H 5700 5150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L megaduino-rescue:R-Device R10
+L Device:R R10
 U 1 1 5BBD209C
-P 6500 5550
-F 0 "R10" V 6580 5550 50  0000 C CNN
-F 1 "91k" V 6500 5550 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6430 5550 50  0001 C CNN
-F 3 "" H 6500 5550 50  0001 C CNN
-	1    6500 5550
+P 4900 5550
+F 0 "R10" V 4980 5550 50  0000 C CNN
+F 1 "91k" V 4900 5550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4830 5550 50  0001 C CNN
+F 3 "" H 4900 5550 50  0001 C CNN
+	1    4900 5550
 	1    0    0    -1  
 $EndComp
 $Comp
-L megaduino-rescue:R-Device R9
+L Device:R R9
 U 1 1 5BBD2116
-P 6500 5150
-F 0 "R9" V 6580 5150 50  0000 C CNN
-F 1 "49k" V 6500 5150 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6430 5150 50  0001 C CNN
-F 3 "" H 6500 5150 50  0001 C CNN
-	1    6500 5150
+P 4900 5150
+F 0 "R9" V 4980 5150 50  0000 C CNN
+F 1 "49k" V 4900 5150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4830 5150 50  0001 C CNN
+F 3 "" H 4900 5150 50  0001 C CNN
+	1    4900 5150
 	1    0    0    -1  
 $EndComp
 $Comp
-L megaduino-rescue:R-Device R12
+L Device:R R12
 U 1 1 5BBD216F
 P 7300 5550
 F 0 "R12" V 7380 5550 50  0000 C CNN
@@ -406,7 +406,7 @@ F 3 "" H 7300 5550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L megaduino-rescue:R-Device R11
+L Device:R R11
 U 1 1 5BBD21DD
 P 7300 5150
 F 0 "R11" V 7380 5150 50  0000 C CNN
@@ -417,7 +417,7 @@ F 3 "" H 7300 5150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L megaduino-rescue:R-Device R13
+L Device:R R13
 U 1 1 5BBD2281
 P 8800 5150
 F 0 "R13" V 8880 5150 50  0000 C CNN
@@ -428,7 +428,7 @@ F 3 "" H 8800 5150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L megaduino-rescue:R-Device R14
+L Device:R R14
 U 1 1 5BBD22ED
 P 8800 5550
 F 0 "R14" V 8880 5550 50  0000 C CNN
@@ -439,32 +439,10 @@ F 3 "" H 8800 5550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L megaduino-rescue:R-Device R15
+L Device:R R15
 U 1 1 5BBD23A1
-P 8050 5150
-F 0 "R15" V 8130 5150 50  0000 C CNN
-F 1 "49k" V 8050 5150 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7980 5150 50  0001 C CNN
-F 3 "" H 8050 5150 50  0001 C CNN
-	1    8050 5150
-	1    0    0    -1  
-$EndComp
-$Comp
-L megaduino-rescue:R-Device R16
-U 1 1 5BBD240B
-P 8050 5550
-F 0 "R16" V 8130 5550 50  0000 C CNN
-F 1 "91k" V 8050 5550 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7980 5550 50  0001 C CNN
-F 3 "" H 8050 5550 50  0001 C CNN
-	1    8050 5550
-	1    0    0    -1  
-$EndComp
-$Comp
-L megaduino-rescue:R-Device R17
-U 1 1 5BBD2CC1
 P 9600 5150
-F 0 "R17" V 9680 5150 50  0000 C CNN
+F 0 "R15" V 9680 5150 50  0000 C CNN
 F 1 "49k" V 9600 5150 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9530 5150 50  0001 C CNN
 F 3 "" H 9600 5150 50  0001 C CNN
@@ -472,10 +450,10 @@ F 3 "" H 9600 5150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L megaduino-rescue:R-Device R18
-U 1 1 5BBD2D35
+L Device:R R16
+U 1 1 5BBD240B
 P 9600 5550
-F 0 "R18" V 9680 5550 50  0000 C CNN
+F 0 "R16" V 9680 5550 50  0000 C CNN
 F 1 "91k" V 9600 5550 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9530 5550 50  0001 C CNN
 F 3 "" H 9600 5550 50  0001 C CNN
@@ -483,7 +461,29 @@ F 3 "" H 9600 5550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L megaduino-rescue:R-Device R20
+L Device:R R17
+U 1 1 5BBD2CC1
+P 8050 5150
+F 0 "R17" V 8130 5150 50  0000 C CNN
+F 1 "49k" V 8050 5150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7980 5150 50  0001 C CNN
+F 3 "" H 8050 5150 50  0001 C CNN
+	1    8050 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R18
+U 1 1 5BBD2D35
+P 8050 5550
+F 0 "R18" V 8130 5550 50  0000 C CNN
+F 1 "91k" V 8050 5550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7980 5550 50  0001 C CNN
+F 3 "" H 8050 5550 50  0001 C CNN
+	1    8050 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R20
 U 1 1 5BBD2DA4
 P 10400 5550
 F 0 "R20" V 10480 5550 50  0000 C CNN
@@ -494,7 +494,7 @@ F 3 "" H 10400 5550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L megaduino-rescue:R-Device R19
+L Device:R R19
 U 1 1 5BBD2E20
 P 10400 5150
 F 0 "R19" V 10480 5150 50  0000 C CNN
@@ -505,7 +505,7 @@ F 3 "" H 10400 5150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L megaduino-rescue:+3.3V-power #PWR014
+L power:+3.3V #PWR014
 U 1 1 5BBD7F2F
 P 4300 5050
 F 0 "#PWR014" H 4300 4900 50  0001 C CNN
@@ -517,19 +517,19 @@ F 3 "" H 4300 5050 50  0001 C CNN
 $EndComp
 Text GLabel 5650 4950 0    60   Input ~ 0
 AD0
-Text GLabel 4850 4950 0    60   Input ~ 0
-AD1
 Text GLabel 6450 4950 0    60   Input ~ 0
+AD1
+Text GLabel 4850 4950 0    60   Input ~ 0
 AD2
 Text GLabel 7250 4950 0    60   Input ~ 0
 AD3
 Text GLabel 8750 4950 0    60   Input ~ 0
 AD4
-Text GLabel 8000 4950 0    60   Input ~ 0
+Text GLabel 9550 4950 0    60   Input ~ 0
 AD5
 Text GLabel 10350 4950 0    60   Input ~ 0
 AD6
-Text GLabel 9550 4950 0    60   Input ~ 0
+Text GLabel 8000 4950 0    60   Input ~ 0
 AD7
 Text GLabel 6200 6000 2    60   Input ~ 0
 A0
@@ -541,11 +541,11 @@ Text GLabel 7850 6000 2    60   Input ~ 0
 A3
 Text GLabel 9350 6000 2    60   Input ~ 0
 A4
-Text GLabel 8550 6000 2    60   Input ~ 0
+Text GLabel 10150 6000 2    60   Input ~ 0
 A5
 Text GLabel 10950 6000 2    60   Input ~ 0
 A6
-Text GLabel 10400 3250 2    60   Input ~ 0
+Text GLabel 8200 4050 0    60   Input ~ 0
 A7
 Connection ~ 5700 5350
 Wire Wire Line
@@ -876,7 +876,7 @@ Wire Wire Line
 Wire Wire Line
 	3450 4850 3450 4900
 $Comp
-L megaduino-rescue:AT24CS02-XHM-Memory_EEPROM U5
+L Memory_EEPROM:AT24CS02-XHM U5
 U 1 1 5BE3283B
 P 6550 3900
 F 0 "U5" H 6350 4150 50  0000 C CNN
@@ -887,7 +887,7 @@ F 3 "" H 6550 3900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L megaduino-rescue:Earth-power #PWR022
+L power:Earth #PWR022
 U 1 1 5BE32A8F
 P 6550 4300
 F 0 "#PWR022" H 6550 4050 50  0001 C CNN
@@ -902,7 +902,7 @@ Wire Wire Line
 Wire Wire Line
 	7450 3850 7450 3800
 $Comp
-L megaduino-rescue:+3.3V-power #PWR0101
+L power:+3.3V #PWR0101
 U 1 1 5BE44357
 P 6550 3550
 F 0 "#PWR0101" H 6550 3400 50  0001 C CNN
@@ -960,7 +960,7 @@ Wire Wire Line
 Wire Wire Line
 	6550 3600 6550 3550
 $Comp
-L megaduino-rescue:LMV324-Amplifier_Operational U1
+L Amplifier_Operational:LMV324 U1
 U 5 1 5C07D849
 P 4300 5450
 F 0 "U1" H 4300 5650 50  0000 L CNN
@@ -971,7 +971,7 @@ F 3 "" H 4350 5650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L megaduino-rescue:LMV324-Amplifier_Operational U3
+L Amplifier_Operational:LMV324 U3
 U 5 1 5C07D98F
 P 4500 5450
 F 0 "U3" H 4500 5650 50  0000 L CNN
@@ -1046,7 +1046,7 @@ Wire Wire Line
 NoConn ~ 2500 5250
 NoConn ~ 10300 3350
 $Comp
-L megaduino-rescue:GNDA-power #PWR0102
+L power:GNDA #PWR0102
 U 1 1 5C0CA6E5
 P 10750 3700
 F 0 "#PWR0102" H 10750 3450 50  0001 C CNN
@@ -1057,7 +1057,7 @@ F 3 "" H 10750 3700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L megaduino-rescue:GNDA-power #PWR0103
+L power:GNDA #PWR0103
 U 1 1 5C0CA979
 P 6500 6000
 F 0 "#PWR0103" H 6500 5750 50  0001 C CNN
@@ -1068,7 +1068,7 @@ F 3 "" H 6500 6000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L megaduino-rescue:R-Device R2
+L Device:R R2
 U 1 1 5C0DDE91
 P 7350 3600
 F 0 "R2" H 7420 3646 50  0000 L CNN
@@ -1079,7 +1079,7 @@ F 3 "~" H 7350 3600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L megaduino-rescue:R-Device R3
+L Device:R R3
 U 1 1 5C0DDFFF
 P 7450 3600
 F 0 "R3" H 7520 3646 50  0000 L CNN
@@ -1100,7 +1100,7 @@ Wire Wire Line
 	7350 3950 8300 3950
 Connection ~ 7350 3900
 $Comp
-L megaduino-rescue:+3.3V-power #PWR0104
+L power:+3.3V #PWR0104
 U 1 1 5C12F985
 P 7400 3350
 F 0 "#PWR0104" H 7400 3200 50  0001 C CNN
@@ -1150,7 +1150,7 @@ Wire Wire Line
 Wire Wire Line
 	2500 6150 2600 6150
 $Comp
-L megaduino-rescue:R-Device R22
+L Device:R R22
 U 1 1 5C2A914D
 P 5000 1300
 F 0 "R22" V 4793 1300 50  0000 C CNN
@@ -1161,7 +1161,7 @@ F 3 "~" H 5000 1300 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L megaduino-rescue:R-Device R21
+L Device:R R21
 U 1 1 5C2A9154
 P 4800 1500
 F 0 "R21" H 4730 1454 50  0000 R CNN
@@ -1172,7 +1172,7 @@ F 3 "~" H 4800 1500 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L megaduino-rescue:Q_NMOS_GDS-Device Q2
+L Device:Q_NMOS_GDS Q2
 U 1 1 5C2A915B
 P 5400 1300
 F 0 "Q2" H 5605 1346 50  0000 L CNN
@@ -1202,7 +1202,7 @@ Wire Wire Line
 Text GLabel 4750 1300 0    60   Input ~ 0
 INJ3
 $Comp
-L megaduino-rescue:R-Device R4
+L Device:R R4
 U 1 1 5C333FFB
 P 4250 2250
 F 0 "R4" V 4043 2250 50  0000 C CNN
@@ -1213,7 +1213,7 @@ F 3 "~" H 4250 2250 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L megaduino-rescue:R-Device R1
+L Device:R R1
 U 1 1 5C334001
 P 4050 2450
 F 0 "R1" H 3980 2404 50  0000 R CNN
@@ -1224,7 +1224,7 @@ F 3 "~" H 4050 2450 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L megaduino-rescue:Q_NMOS_GDS-Device Q1
+L Device:Q_NMOS_GDS Q1
 U 1 1 5C334007
 P 4650 2250
 F 0 "Q1" H 4855 2296 50  0000 L CNN
@@ -1259,7 +1259,7 @@ Text GLabel 4800 2000 2    60   Input ~ 0
 JS2
 NoConn ~ 8300 3350
 $Comp
-L megaduino-rescue:MCP2562-E-SN-Interface_CAN_LIN U2
+L Interface_CAN_LIN:MCP2562-E-SN U2
 U 1 1 5C177EBA
 P 6700 2050
 F 0 "U2" H 6700 2628 50  0000 C CNN
@@ -1274,7 +1274,7 @@ Wire Wire Line
 Wire Wire Line
 	8300 1950 7200 1950
 $Comp
-L megaduino-rescue:Earth-power #PWR013
+L power:Earth #PWR013
 U 1 1 5C19CADF
 P 7000 2550
 F 0 "#PWR013" H 7000 2300 50  0001 C CNN
@@ -1298,7 +1298,7 @@ Connection ~ 7000 2500
 Wire Wire Line
 	7000 2500 7250 2500
 $Comp
-L megaduino-rescue:+3.3V-power #PWR015
+L power:+3.3V #PWR015
 U 1 1 5C1C2B9C
 P 7350 2100
 F 0 "#PWR015" H 7350 1950 50  0001 C CNN
@@ -1313,7 +1313,7 @@ Wire Wire Line
 Wire Wire Line
 	7350 2150 7350 2100
 $Comp
-L megaduino-rescue:+5V-power #PWR010
+L power:+5V #PWR010
 U 1 1 5C1D6489
 P 6700 1600
 F 0 "#PWR010" H 6700 1450 50  0001 C CNN
@@ -1330,7 +1330,7 @@ CANH
 Text GLabel 6050 2250 0    60   Input ~ 0
 CANL
 $Comp
-L megaduino-rescue:Conn_01x13_Male-Connector J3
+L Connector:Conn_01x13_Male J3
 U 1 1 5C017DBB
 P 2900 2300
 F 0 "J3" H 3006 3078 50  0000 C CNN
@@ -1341,7 +1341,7 @@ F 3 "~" H 2900 2300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L megaduino-rescue:D_Schottky-Device D1
+L Device:D_Schottky D1
 U 1 1 5C3286CF
 P 10550 3550
 F 0 "D1" H 10550 3766 50  0000 C CNN
@@ -1352,7 +1352,7 @@ F 3 "~" H 10550 3550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L megaduino-rescue:Conn_01x02_Male-Connector J4
+L Connector:Conn_01x02_Male J4
 U 1 1 5C353ECF
 P 1650 2100
 F 0 "J4" H 1750 2350 50  0000 C CNN
@@ -1363,7 +1363,7 @@ F 3 "~" H 1650 2100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L megaduino-rescue:R-Device R23
+L Device:R R23
 U 1 1 5C187C7E
 P 6100 2050
 F 0 "R23" H 6170 2096 50  0000 L CNN
@@ -1392,7 +1392,7 @@ Wire Wire Line
 Wire Wire Line
 	6100 2250 6200 2250
 $Comp
-L megaduino-rescue:Conn_01x04_Male-Connector J5
+L Connector:Conn_01x04_Male J5
 U 1 1 5C48EF5E
 P 7300 1550
 F 0 "J5" H 7400 1800 50  0000 C CNN
@@ -1419,7 +1419,7 @@ Wire Wire Line
 Wire Wire Line
 	7600 1750 7500 1750
 $Comp
-L megaduino-rescue:Earth-power #PWR0106
+L power:Earth #PWR0106
 U 1 1 5C515326
 P 7550 1800
 F 0 "#PWR0106" H 7550 1550 50  0001 C CNN
@@ -1462,7 +1462,7 @@ Connection ~ 1900 2200
 Wire Wire Line
 	1900 2200 1900 2250
 $Comp
-L megaduino-rescue:Earth-power #PWR016
+L power:Earth #PWR016
 U 1 1 5C3541C7
 P 1900 2250
 F 0 "#PWR016" H 1900 2000 50  0001 C CNN
@@ -1480,7 +1480,7 @@ Connection ~ 5350 1700
 Wire Wire Line
 	5350 1750 5350 1700
 $Comp
-L megaduino-rescue:Earth-power #PWR08
+L power:Earth #PWR08
 U 1 1 5C2A9162
 P 5350 1750
 F 0 "#PWR08" H 5350 1500 50  0001 C CNN
@@ -1498,7 +1498,7 @@ Connection ~ 4600 2650
 Wire Wire Line
 	4600 2700 4600 2650
 $Comp
-L megaduino-rescue:Earth-power #PWR07
+L power:Earth #PWR07
 U 1 1 5C33400D
 P 4600 2700
 F 0 "#PWR07" H 4600 2450 50  0001 C CNN
