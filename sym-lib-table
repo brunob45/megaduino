@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name teensy)(type Legacy)(uri ${KIPRJMOD}/teensy_library-master/teensy.lib)(options "")(descr ""))
+  (lib (name megaduino-rescue)(type Legacy)(uri ${KIPRJMOD}/megaduino-rescue.lib)(options "")(descr ""))
 )
