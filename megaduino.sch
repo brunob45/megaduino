@@ -175,7 +175,7 @@ Text GLabel 8200 2150 0    60   Input ~ 0
 IGN2
 Text GLabel 8000 2250 0    60   Input ~ 0
 ECL
-Text GLabel 10950 3850 2    60   Input ~ 0
+Text GLabel 10700 4050 2    60   Input ~ 0
 FP
 Text GLabel 8200 2550 0    60   Input ~ 0
 FAN
@@ -216,7 +216,7 @@ Text GLabel 8200 1750 0    60   Input ~ 0
 Idle
 Text GLabel 10400 3950 2    60   Input ~ 0
 INJ3
-Text GLabel 10700 4050 2    60   Input ~ 0
+Text GLabel 10950 3850 2    60   Input ~ 0
 INJ4
 $Comp
 L power:+12V #PWR011
@@ -1508,4 +1508,6 @@ F 3 "~" H 4600 2700 50  0001 C CNN
 	1    4600 2700
 	1    0    0    -1  
 $EndComp
+Text GLabel 8300 3350 0    50   Input ~ 0
+D13
 $EndSCHEMATC
