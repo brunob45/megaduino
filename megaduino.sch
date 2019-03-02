@@ -1400,39 +1400,10 @@ F 1 "Conn_01x04_Male" H 7400 1700 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 7300 1550 50  0001 C CNN
 F 3 "~" H 7300 1550 50  0001 C CNN
 	1    7300 1550
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	7750 1450 7750 1400
-Wire Wire Line
-	7700 1450 7700 1550
-Wire Wire Line
-	7700 1550 8300 1550
-Wire Wire Line
-	7500 1450 7700 1450
-Wire Wire Line
-	7650 1550 7650 1650
-Wire Wire Line
-	7650 1650 8300 1650
-Wire Wire Line
-	7500 1550 7650 1550
-Wire Wire Line
-	7600 1750 7500 1750
-$Comp
-L power:Earth #PWR0106
-U 1 1 5C515326
-P 7550 1800
-F 0 "#PWR0106" H 7550 1550 50  0001 C CNN
-F 1 "Earth" H 7550 1650 50  0001 C CNN
-F 2 "" H 7550 1800 50  0001 C CNN
-F 3 "~" H 7550 1800 50  0001 C CNN
-	1    7550 1800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7550 1650 7500 1650
-Wire Wire Line
-	7550 1650 7550 1800
 Wire Wire Line
 	10300 3550 10350 3550
 Wire Wire Line
@@ -1447,8 +1418,6 @@ Wire Wire Line
 	10700 3350 10700 1150
 Wire Wire Line
 	10700 1150 7600 1150
-Wire Wire Line
-	7600 1150 7600 1750
 Connection ~ 10350 3550
 Wire Wire Line
 	10350 3550 10400 3550
@@ -1510,4 +1479,15 @@ F 3 "~" H 4600 2700 50  0001 C CNN
 $EndComp
 Text GLabel 8300 3350 0    50   Input ~ 0
 D13
+Wire Wire Line
+	7500 1650 8300 1650
+Wire Wire Line
+	7500 1550 8300 1550
+Wire Wire Line
+	7500 1450 7750 1450
+Connection ~ 7750 1450
+Wire Wire Line
+	7500 1350 7600 1350
+Wire Wire Line
+	7600 1150 7600 1350
 $EndSCHEMATC
