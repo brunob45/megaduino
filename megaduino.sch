@@ -38,9 +38,9 @@ F 3 "" H 2300 5350 50  0001 C CNN
 $EndComp
 Text GLabel 1900 4850 0    60   Input ~ 0
 CANH
-Text GLabel 1600 4950 0    60   Input ~ 0
+Text GLabel 1500 4950 0    60   Input ~ 0
 IGN1
-Text GLabel 1900 5050 0    60   Input ~ 0
+Text GLabel 1250 5050 0    60   Input ~ 0
 IGN2
 Text GLabel 1600 5150 0    60   Input ~ 0
 ECL
@@ -770,10 +770,6 @@ Wire Wire Line
 Wire Wire Line
 	2000 5150 1600 5150
 Wire Wire Line
-	2000 5050 1900 5050
-Wire Wire Line
-	2000 4950 1600 4950
-Wire Wire Line
 	1550 4450 2000 4450
 Wire Wire Line
 	2000 4850 1900 4850
@@ -1145,10 +1141,6 @@ Wire Wire Line
 	2550 4350 2550 4450
 Wire Wire Line
 	2550 4450 2500 4450
-Wire Wire Line
-	2850 6250 2650 6250
-Wire Wire Line
-	2500 6150 2550 6150
 $Comp
 L Device:R R22
 U 1 1 5C2A914D
@@ -1503,55 +1495,63 @@ Vref
 $Comp
 L Device:R R24
 U 1 1 5C9E48A1
-P 2550 6550
-F 0 "R24" V 2630 6550 50  0000 C CNN
-F 1 "1k" V 2550 6550 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 2480 6550 50  0001 C CNN
-F 3 "" H 2550 6550 50  0001 C CNN
-	1    2550 6550
-	-1   0    0    1   
+P 1050 4850
+F 0 "R24" V 1130 4850 50  0000 C CNN
+F 1 "1k" V 1050 4850 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 980 4850 50  0001 C CNN
+F 3 "" H 1050 4850 50  0001 C CNN
+	1    1050 4850
+	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R R25
 U 1 1 5C9E49D1
-P 2650 6550
-F 0 "R25" V 2730 6550 50  0000 C CNN
-F 1 "1k" V 2650 6550 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 2580 6550 50  0001 C CNN
-F 3 "" H 2650 6550 50  0001 C CNN
-	1    2650 6550
-	-1   0    0    1   
+P 800 5150
+F 0 "R25" V 880 5150 50  0000 C CNN
+F 1 "1k" V 800 5150 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 730 5150 50  0001 C CNN
+F 3 "" H 800 5150 50  0001 C CNN
+	1    800  5150
+	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	2550 6400 2550 6150
-Connection ~ 2550 6150
-Wire Wire Line
-	2550 6150 2600 6150
-Wire Wire Line
-	2650 6250 2650 6400
-Connection ~ 2650 6250
-Wire Wire Line
-	2650 6250 2500 6250
 $Comp
-L power:+3.3V #PWR017
+L power:+5V #PWR017
 U 1 1 5CA29829
-P 2800 6700
-F 0 "#PWR017" H 2800 6550 50  0001 C CNN
-F 1 "+3.3V" H 2800 6840 50  0000 C CNN
-F 2 "" H 2800 6700 50  0001 C CNN
-F 3 "" H 2800 6700 50  0001 C CNN
-	1    2800 6700
+P 650 4800
+F 0 "#PWR017" H 650 4650 50  0001 C CNN
+F 1 "+5V" H 650 4940 50  0000 C CNN
+F 2 "" H 650 4800 50  0001 C CNN
+F 3 "" H 650 4800 50  0001 C CNN
+	1    650  4800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2800 6700 2800 6750
+	2500 6250 2850 6250
 Wire Wire Line
-	2800 6750 2650 6750
+	2500 6150 2600 6150
 Wire Wire Line
-	2550 6750 2550 6700
+	1200 4850 1550 4850
 Wire Wire Line
-	2650 6700 2650 6750
-Connection ~ 2650 6750
+	1550 4850 1550 4950
 Wire Wire Line
-	2650 6750 2550 6750
+	1550 4950 1500 4950
+Wire Wire Line
+	1550 4950 2000 4950
+Connection ~ 1550 4950
+Wire Wire Line
+	1250 5050 1300 5050
+Wire Wire Line
+	950  5150 1300 5150
+Wire Wire Line
+	1300 5150 1300 5050
+Connection ~ 1300 5050
+Wire Wire Line
+	1300 5050 2000 5050
+Wire Wire Line
+	650  4800 650  4850
+Wire Wire Line
+	900  4850 650  4850
+Connection ~ 650  4850
+Wire Wire Line
+	650  4850 650  5150
 $EndSCHEMATC
